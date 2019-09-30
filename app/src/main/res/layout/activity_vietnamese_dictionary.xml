@@ -1,0 +1,46 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/headerMainActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/headerMainActivity">
+        </View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSearchBox"
+            app:cardCornerRadius="5dp">
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:padding="10dp"
+                android:id="@+id/actv_autoCompleteVietnamesText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/tra_tu"
+                android:drawableLeft="@drawable/ic_search"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:background="@null"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

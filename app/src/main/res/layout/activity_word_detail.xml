@@ -1,0 +1,78 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/headerMainActivity"
+    android:fitsSystemWindows="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/tv_Detail_FirstWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/english_Detail"
+                android:textSize="30dp"
+                android:textColor="@color/headerMainActivity"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_Detail_FirstWord"
+                android:id="@+id/tv_Detail_SecondWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/english_Detail"
+                android:textSize="30dp"
+                android:textColor="@color/colorBlack"/>
+
+            <View
+                android:layout_below="@id/tv_Detail_SecondWord"
+                android:layout_marginTop="9dp"
+                android:id="@+id/v_Detail_Word_Line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/headerMainActivity"/>
+
+            <TextView
+                android:id="@+id/tv_Detail_Explanation"
+                android:text="@string/search_here"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/v_Detail_Word_Line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:layout_marginBottom="60dp"/>
+
+            <Button
+                android:id="@+id/btn_Detail_Back"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/button_back_detail"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/back_button"
+                android:textSize="20dp"
+                android:textColor="@color/colorLineItem"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,92 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/headerMainActivity"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/headerMainActivity">
+        </View>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/cv_SearchBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSearchBox"
+            app:cardCornerRadius="5dp">
+
+            <AutoCompleteTextView
+                android:completionThreshold="1"
+                android:padding="10dp"
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/search_here"
+                android:drawableLeft="@drawable/ic_search"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+                android:background="@null"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="90dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/cv_SearchBox"
+            android:id="@+id/cv_dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorSearchBox"
+            app:cardCornerRadius="5dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/all_words"
+                android:textSize="20dp"
+                android:textColor="@color/headerMainActivity"/>
+
+            <ListView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="35dp"
+                android:id="@+id/lv_Dictionary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_Go_To_VietnameseDictionary"
+            android:text="@string/go_to_vietnamese_dictionary"
+            android:background="@drawable/background_button_go_to_vietnamesedictionary">
+        </Button>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DemoDictionary</string>
+    <string name="search_here">Search here</string>
+    <string name="tra_tu">Tra Từ</string>
+    <string name="all_words">All Words:</string>
+    <string name="english_Detail">English</string>
+    <string name="back_button">Back</string>
+    <string name="go_to_vietnamese_dictionary">Go To Vietnamese Dictionary</string>
+</resources>

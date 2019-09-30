@@ -1,0 +1,8 @@
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/headerMainActivity"></solid>
+    <stroke android:width="5dp"
+        android:color="@color/colorStrokeButtonBackDetail">
+    </stroke>
+    <corners android:radius="10dp"></corners>
+</shape>
